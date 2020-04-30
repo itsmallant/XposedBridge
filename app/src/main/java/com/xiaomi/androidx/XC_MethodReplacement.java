@@ -1,6 +1,6 @@
-package de.robv.android.xposed;
+package com.xiaomi.androidx;
 
-import de.robv.android.xposed.callbacks.XCallback;
+import com.xiaomi.androidx.callbacks.XCallback;
 
 /**
  * A special case of {@link XC_MethodHook} which completely replaces the original method.
@@ -53,7 +53,7 @@ public abstract class XC_MethodReplacement extends XC_MethodHook {
 	/**
 	 * Predefined callback that skips the method without replacements.
 	 */
-	public static final XC_MethodReplacement DO_NOTHING = new XC_MethodReplacement(PRIORITY_HIGHEST*2) {
+	public static final XC_MethodReplacement DO_NOTHING = new XC_MethodReplacement(XCallback.PRIORITY_HIGHEST*2) {
 		@Override
 		protected Object replaceHookedMethod(MethodHookParam param) throws Throwable {
 			return null;
@@ -66,7 +66,7 @@ public abstract class XC_MethodReplacement extends XC_MethodHook {
 	 * @param result The value that should be returned to callers of the hooked method.
 	 */
 	public static XC_MethodReplacement returnConstant(final Object result) {
-		return returnConstant(PRIORITY_DEFAULT, result);
+		return returnConstant(XCallback.PRIORITY_DEFAULT, result);
 	}
 
 	/**

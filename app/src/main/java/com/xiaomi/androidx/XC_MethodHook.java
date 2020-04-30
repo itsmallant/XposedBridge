@@ -1,9 +1,9 @@
-package de.robv.android.xposed;
+package com.xiaomi.androidx;
 
 import java.lang.reflect.Member;
 
-import de.robv.android.xposed.callbacks.IXUnhook;
-import de.robv.android.xposed.callbacks.XCallback;
+import com.xiaomi.androidx.callbacks.IXUnhook;
+import com.xiaomi.androidx.callbacks.XCallback;
 
 /**
  * Callback class for method hooks.

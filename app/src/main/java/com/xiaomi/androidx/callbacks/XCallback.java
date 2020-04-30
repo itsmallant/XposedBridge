@@ -1,11 +1,11 @@
-package de.robv.android.xposed.callbacks;
+package com.xiaomi.androidx.callbacks;
 
 import android.os.Bundle;
 
 import java.io.Serializable;
 
-import de.robv.android.xposed.XposedBridge;
-import de.robv.android.xposed.XposedBridge.CopyOnWriteSortedSet;
+import com.xiaomi.androidx.XposedBridge;
+import com.xiaomi.androidx.XposedBridge.CopyOnWriteSortedSet;
 
 /**
  * Base class for Xposed callbacks.

@@ -17,11 +17,11 @@ android {
     }
 
     // Only build the release variant
-    variantFilter { variant ->
-        if (variant.buildType.name != BuilderConstants.RELEASE) {
-            variant.ignore = true
-        }
-    }
+//    variantFilter { variant ->
+//        if (variant.buildType.name != BuilderConstants.RELEASE) {
+//            variant.ignore = true
+//        }
+//    }
 
     // Add the hidden API stub classes to the bootclasspath.
     // As they have to be injected before the official SDK classes and must not be part of the

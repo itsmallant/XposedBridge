@@ -1,4 +1,4 @@
-package de.robv.android.xposed;
+package com.xiaomi.androidx;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import de.robv.android.xposed.services.FileResult;
+import com.xiaomi.androidx.services.FileResult;
 
 /**
  * This class is basically the same as SharedPreferencesImpl from AOSP, but

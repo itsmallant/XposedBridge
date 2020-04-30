@@ -1,6 +1,6 @@
-package de.robv.android.xposed.callbacks;
+package com.xiaomi.androidx.callbacks;
 
-import de.robv.android.xposed.IXposedHookZygoteInit;
+import com.xiaomi.androidx.IXposedHookZygoteInit;
 
 /**
  * Interface for objects that can be used to remove callbacks.
